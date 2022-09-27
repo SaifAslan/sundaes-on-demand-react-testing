@@ -1,12 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
-import OrderSummary from "./pages/summary/OrderSummary";
+import { Container } from "react-bootstrap";
+import { OrderDetailsProvider } from "./constexts/OrderDetails";
+import OrderEntery from "./pages/entry/OrderEntery";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <OrderSummary />
-    </div>
+    <Container>
+      <OrderDetailsProvider>
+        <OrderEntery />
+      </OrderDetailsProvider>
+    </Container>
   );
 }
 

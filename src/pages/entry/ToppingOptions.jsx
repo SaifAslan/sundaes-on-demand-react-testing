@@ -1,7 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-function ToppingOptions({ name, imagePath }) {
+function ToppingOptions({ name, imagePath, updateItemCount }) {
   return (
     <Col xs={12} md={4} sm={3} style={{ textAlign: "center" }}>
       <img
